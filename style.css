@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,500;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)),url('https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: 'roboto';
+}
+
+:root{
+    --blue:#0038a7;
+}
+::-webkit-scrollbar{display: none;}
+.navbar{
+    display: flex;
+    justify-content: end;
+    padding-top: 10vh;
+    padding-right: 10vw;
+}
+.navbar>ul>li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 8vw;
+
+}
+.navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.navbar>ul>li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: var(--blue);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ;
+}
+.navbar>ul>li:hover::after{
+    width: 100%;
+}
+div.para{
+    margin: 100px 70px;
+}
+.para1{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.para2{
+    margin: 10px 0px;
+}
+
+button{
+    background: none; 
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.learn_more{
+    border: solid white;
+    color: white;
+    transition: all 0.4s linear;
+}
+.learn_more:hover{
+    border: solid var(--blue);
+    color: var(--blue);
+    background-color: white;
+}
+.sign_up{
+    border: solid var(--blue);
+    color: var(--blue);
+    margin-left: 10px;
+    transition: all 0.4s;
+}
+.sign_up:hover{
+    border: solid var(--blue);
+    color: white;
+    margin-left: 10px;
+    background-color: var(--blue);
+}
+
+.image{
+    float: right;
+    margin-right: 13vw;
+    margin-top: 15vh;
+}
+
+
+section#contact_us{
+    position: absolute;
+    top: 100vh;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+}
+div.contact_us{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.contact_us_part1{
+    width: 300px;
+    background-color:#0038a7;
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 8px 0px rgba(73, 73, 73, 0.767);
+}
+div.contact_us_part1>h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+div.contact_us_part1>h4{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+div.contact_us_part1>p{
+    line-height: 1.7;
+}
+div.contact_us_part1>p>a{
+    text-decoration: none;
+    color: white;
+}
+.social-media{
+    margin-top: 20px;
+}
+div.contact_us_part2{
+    width: 300px;
+    background-color: white;
+    border: 2px solid #0038a7;
+    border-radius: 5px;
+}
+div.contact_us_part2>form{
+    padding: 10px 25px;
+    font-weight: lighter;
+}
+div.contact_us_part2>form>input[type=text], div.contact_us_part2>form>input[type=email], div.contact_us_part2>form>input[type=password], div.contact_us_part2>form>textarea{
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border:2px solid #0038a7;
+    font-size: 1rem;
+    outline: none;
+    color: black;
+}
+textarea{margin-bottom: 10px;}
+
+label{
+    justify-content:left;
+    font-size: 15px;
+    color: #0038a7;
+}
+
+div.contact_us_part2>form>p{
+    color: #0038a7;
+    font-weight: bold;
+}
+div.contact_us_part2>form>a>button{
+    border: solid #30ad6c;
+    background-color: #30ad6c;
+    color: white;
+    border-radius: 5px;
+}
+div.contact_us_part2>form>a>button:focus{
+    transform: translateY(3px);
+}
+
+section#sign_up{
+    position: relative;
+    top: 100vh;
+    background-color: #0038a7;
+    height: 100vh;
+    width: 100%;
+}
+div.sign_up{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+    width: min-content;
+    text-align: center;
+    padding: 30px;
+    border: none;
+    border: none;
+    color: var(--blue);
+    margin-left: 10px;
+    transition: all 0.4s;
+}
+div.sign_up:hover{
+    background-color: none;
+    border: 2px solid white;
+}
+
+#sign_up>.sign_up>form>h1{color: black; margin-bottom: 20px;}
+#sign_up>div.sign_up:hover>form>h1{color: white; margin-bottom: 20px;}
+
+div.sign_up>form>input{
+    width: 250px;
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-bottom: 40px; 
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    border-bottom: 1px solid white;
+    font-weight: 100;
+    background-color: white;
+}
+div.sign_up:hover>form>input{color: white;}
+
+div.sign_up>form>input::placeholder{font-family: 'Roboto'; letter-spacing: 1px;}
+
+#sign_up>.sign_up:hover>form>input{
+    background: none;
+}
+
+div.sign_up>form>a>button{
+    border: none;
+    background-color: var(--blue);
+    width: 100px;
+    color: white;
+}
+div.sign_up:hover>form>a>button{
+    background-color: white;
+    color: black;
+}
+
+
+section#about_us{
+    position: relative;
+    top: 100vh;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+div.about_us{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: var(--blue);
+    width: 550px;
+    height: 260px;
+    border: none;
+    color: white;
+    padding: 30px;
+    scale: 1.5;
+    transform: rotate(5deg);
+}
+.about_us_text{ rotate: -5deg;}
+div.about_us>.about_us_text>h1{
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+div.about_us>.about_us_text>p{
+    line-height: 1.7;
+    font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
